@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Whack a Mole</title>
+    </head>
+    <body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="game.html">De Game</a></li>
+                <li><a href="info.html">info</a></li>
+            </ul>
+            </nav>
+        </header>
+            <div class="gameMovement">
+            <h1>
+                Speel de 1v1 game
+            </h1>
+            <h3>
+                Controls
+            </h3>
+            <h4>
+                player1: wasd=movement, spacebar=attack.
+                <br>
+                player2: pijltjes=movement, pgdown= attack.
+            </h4>
+        </div>
+
+        <head>
+
+            <style>
+                *{
+                    box-sizing: border-box;
+                    
+                }
+            </style>
+        </head>
+        
+        <body>
+            <!--red container-->
+            <div style="position: relative; display: inline-block;">
+                <!--smaller div-->
+                <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+        
+                    <!--player health-->
+                    <div style="position:relative; height: 30px; width: 100%; display:flex; justify-content: flex-end; ">
+                        <div style="background-color: red; height: 30px; width: 100%;"></div>
+                        <div id="playerHealth" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+                        </div>
+                    <!--timer-->
+                    <div 
+                    id="timer"
+                    style="background-color: red; width: 100px; height: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                    
+                    10 
+                    </div>
+                    
+                    
+                    
+                    
+                    <!--enemy health-->
+                    <div style="position:relative; height: 30px; width: 100%">
+                    <div style="background-color: red; height: 30px;"></div>
+                    <div id="enemyHealth" style="position: absolute; background: green; top: 0; right: 0; bottom: 0; left: 0;"></div>
+                    </div>
+                    <div></div>
+                </div> 
+                <div id="displayText" style="position: absolute; color: white; align-items: center; justify-content: center; top: 0; right: 0; bottom: 0; left: 0; display: none;">Tie</div>
+        <canvas></canvas>
+        </div>  
+        <script src="script.js"></script>
+        </body>
+        
+</body>
+</html>
